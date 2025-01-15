@@ -116,12 +116,16 @@
         accept-charset="UTF-8"
       
         <input type="text" name="nombre" placeholder="Nombre completo" />
-        <input type="email" name="email" placeholder="Correo electrónico" required/>
-        <input type="date" required/>
+        <br>
+        <input type="email" name="email" placeholder="Correo electrónico"/>
+        <br><br>
+        <input type="date" id="fecha"  name="fecha_nacimiento" required/>
+        <br><br>
         <input type="radio" id="radio1" name="gender" value="male" />
         <label for="radio1">Masculino</label>
         <input type="radio" id="radio2" name="gender" value="female" />
         <label for="radio2">Femenino</label>
+        <br><br>
         <select name="miembro">
           <option value="">Elige tu miembro preferido de la banda</option>
           <option value="Bunbury">Bunbury</option>
@@ -129,6 +133,7 @@
           <option value="Valdivia">Juan Valdivia</option>
           <option value="Andreu">Pedro Andreu</option>
         </select>
+        <br><br>
         <input type="submit" value="Registrarse" />
       </form>
       <br><br>
@@ -156,7 +161,7 @@
       </section>
     </main>
     <footer>
-      <p>Copyright © HDS</p>
+      <p>©Copyright HDS</p>
     </footer>
   </body>
 </html>
