@@ -114,20 +114,20 @@
         method="post"
         target="_self"
         enctype="application/x-www-form-urlencoded"
-        accept-charset="UTF-8"
-      
-        <input type="text" name="nombre" placeholder="Nombre completo" />
-        <br>
-        <input type="email" name="email" placeholder="Correo electrónico"/>
+        accept-charset="UTF-8">
+
+        <input type="text" name="nombre" placeholder="Nombre completo" required/>
+        <br><br>
+        <input type="email" name="email" placeholder="Correo electrónico" required/>
         <br><br>
         <input type="date" id="fecha"  name="fecha_nacimiento" required/>
         <br><br>
-        <input type="radio" id="radio1" name="gender" value="male" />
+        <input type="radio" id="radio1" name="gender" value="male" required />
         <label for="radio1">Masculino</label>
         <input type="radio" id="radio2" name="gender" value="female" />
         <label for="radio2">Femenino</label>
         <br><br>
-        <select name="miembro">
+        <select name="miembro" required>
           <option value="">Elige tu miembro preferido de la banda</option>
           <option value="Bunbury">Bunbury</option>
           <option value="Cardiel">Joaquin Cardiel</option>
