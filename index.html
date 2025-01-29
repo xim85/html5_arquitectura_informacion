@@ -12,15 +12,14 @@
   </head>
   <body>
     <header>
-      <h1>
-        <img
-          height="50%"
-          width="50%"
-          title="logo heroes del silencio"
-          src="https://i.pinimg.com/736x/66/21/ec/6621ec6d230f524f1b6daef26b827026.jpg"
-          alt="Logo Heroes Senderos de traición"
-        />
-      </h1>
+      <h1>HEROES DEL SILENCIO</h1>
+      <img
+        width="30%"
+        title="logo heroes del silencio"
+        src="https://i.pinimg.com/736x/66/21/ec/6621ec6d230f524f1b6daef26b827026.jpg"
+        alt="Logo Heroes Senderos de traición"
+      />
+
       <nav>
         <ul>
           <li>
@@ -52,40 +51,127 @@
       </nav>
     </header>
     <main>
-      <p>
-        Mantente al día con las últimas novedades de la banda: lanzamientos de nuevos productos, tributos, eventos especiales y mucho más. Aquí encontrarás toda la información actualizada sobre <em>Héroes del Silencio</em>. <b>¡No te pierdas ninguna noticia!</b>
-      </p>
+      <h3>
+        Mantente al día con las últimas novedades de la banda: lanzamientos de
+        nuevos productos, tributos, eventos especiales y mucho más. Aquí
+        encontrarás toda la información actualizada sobre
+        <em>Héroes del Silencio</em>. <b>¡No te pierdas ninguna noticia!</b>
+      </h3>
       <section>
-        <form
+        <h3>¿Quiénes son?</h3>
+        <p>
+          Héroes del Silencio fue una influyente banda de rock formada en
+          Zaragoza, España, en 1984. Conocidos por su mezcla de rock gótico,
+          alternativo y letras poéticas, se convirtieron en un fenómeno
+          internacional en los años 80 y 90.
+        </p>
+      </section>
+      <section>
+        <h3>Integrantes</h3>
+        <ul>
+          <li><strong>Enrique Bunbury:</strong> Voz principal.</li>
+          <li><strong>Juan Valdivia:</strong> Guitarra.</li>
+          <li><strong>Pedro Andreu:</strong> Batería.</li>
+          <li><strong>Joaquín Cardiel:</strong> Bajo.</li>
+        </ul>
+      </section>
+      <section>
+        <h3>Álbumes Destacados</h3>
+        <ol>
+          <li><strong>El Mar No Cesa</strong> (1988)</li>
+          <li><strong>Senderos de Traición</strong> (1990)</li>
+          <li><strong>El Espíritu del Vino</strong> (1993)</li>
+          <li><strong>Avalancha</strong> (1995)</li>
+        </ol>
+      </section>
+      <section>
+        <h3>Logros</h3>
+        <p>
+          Héroes del Silencio vendió más de 6 millones de discos en todo el
+          mundo y es considerada una de las bandas de rock en español más
+          influyentes. Su último concierto oficial fue en 1996, aunque volvieron
+          para una gira de reunión en 2007.
+        </p>
+      </section>
+
+      <section>
+        <h3>Curiosidades</h3>
+        <p>
+          La banda se destacó por su estética oscura y su capacidad de llenar
+          estadios en toda Europa y América Latina. Enrique Bunbury, su
+          vocalista, sigue siendo un artista de renombre en su carrera como
+          solista.
+        </p>
+      </section>
+      <section>
+        <img
+          width="20%"
+          src="https://www.cambio16.com/wp-content/uploads/2015/10/06foto-Jose-Girl-320x320.jpg"
+          alt="bunbury"
+        />
+        <img
+          width="20%"
+          src="https://i0.wp.com/metalcry.com/wp-content/uploads/2019/04/Joaqu%C3%ADn_CArdiel_zaragoza-2007-Foto_alberto-p-veiga.jpg?fit=640%2C368&ssl=1"
+          alt="cardiel"
+        />
+        <img
+          width="20%"
+          src="https://www.rockzonemag.com/wp-content/uploads/2023/01/Pedro-Andreu-entrevista-1021x575.gif"
+          alt="andreu"
+        />
+        <img
+          width="20%"
+          src="https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2024/11/18/heroes-del-silencio.jpeg"
+          alt="valdivia"
+        />
+      </section>
+      <br /><br />
+      <h3>Regístrate</h3>
+      <form
         action="registro.com"
         method="post"
         enctype="application/x-www-form-urlencoded"
         accept-charset="UTF-8"
       >
-        <input type="text" name="nombre" placeholder="Nombre completo" />
-        <input type="email" name="email" placeholder="Correo electrónico" />
-        <input type="date" />
-        <input type="radio" id="radio1" name="gender" value="male" />
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Nombre completo"
+          required
+        />
+        <br /><br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+          required
+        />
+        <br /><br />
+        <input type="date" id="fecha" name="fecha_nacimiento" required />
+        <br /><br />
+        <input type="radio" id="radio1" name="gender" value="male" required />
         <label for="radio1">Masculino</label>
         <input type="radio" id="radio2" name="gender" value="female" />
         <label for="radio2">Femenino</label>
-        <select name="miembro">
+        <br /><br />
+        <select name="miembro" required>
           <option value="">Elige tu miembro preferido de la banda</option>
           <option value="Bunbury">Bunbury</option>
           <option value="Cardiel">Joaquin Cardiel</option>
           <option value="Valdivia">Juan Valdivia</option>
           <option value="Andreu">Pedro Andreu</option>
         </select>
+        <br /><br />
         <input type="submit" value="Registrarse" />
-      </section>
       </form>
+      <br /><br />
       <section id="miembros">
-        <table border="5" id="heroes">
+        <table border="1" id="heroes">
           <caption>
-            Heroes
+            Heroes del Silencio
           </caption>
           <tr>
-            <td>Miembros Heroes</td>
+            <th colspan="4">Miembros Heroes</th>
           </tr>
           <tr>
             <td>Bunbury</td>
@@ -100,14 +186,20 @@
             <td>Bateria</td>
           </tr>
         </table>
-
-        <p>
-          
-        </p>
       </section>
     </main>
     <footer>
-      <p>Copyright © HDS</p>
+      <p>
+        Contacto: <a href="mailto:contacto@miweb.com">contacto@miweb.com</a> |
+        Teléfono: +34 800 123 456
+      </p>
+      <p>©Copyright HDS</p>
+      <p>
+        Síguenos en:
+        <a href="https://facebook.com" target="_blank">Facebook</a> |
+        <a href="https://twitter.com" target="_blank">Twitter</a> |
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+      </p>
     </footer>
   </body>
 </html>
